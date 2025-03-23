@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .top-nav {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-nav img {
+            width: 150px;
+            height: 50px;
+        }
+
+        .top-nav input[type="text"] {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .horizontal-cards {
+            display: flex;
+            padding: 20px;
+            border-radius: 10px;
+            gap: 30px;
+        }
+
+        .horizontal-card {
+            padding: 35px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        .quote-card {
+            background-color: #663399;
+            color: white;
+            flex: 75;
+            height: 200px;
+        }
+
+        .work-card {
+            background-color: white;
+            color: #333;
+            flex: 25;
+            padding-left: 50px;
+        }
+
+        .work-card p {
+            margin-bottom: 5px;
+        }
+
+        .apps-requests-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .apps-section,
+        .requests-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .apps-section {
+            flex-basis: 72%;
+            height: 250px;
+        }
+
+        .requests-section {
+            flex-basis: 28%;
+            height: 700px;
+        }
+
+        .apps-header,
+        .requests-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .app-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100px;
+            height: 120px;
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .app-icon span {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            text-transform: capitalize;
+        }
+
+        .requests-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px
+        }
+
+        .request-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .top-nav .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .top-nav .profile-circle-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top-nav .profile-circle-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .top-nav .notification-icon {
+            color: white;
+            font-size: 20px;
+        }
+
+        .top-nav .logout-icon {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-nav">
+        <a href="https://www.bluerevive.in/" target="_blank"> <img src="Images/BL-logo.jpeg" alt="Company Logo"></a>
+        <div class="nav-search">
+            <input type="text" placeholder="Search by Employees Name, Role or Department">
+        </div>
+        <div class="nav-right">
+            <a href="#" class="profile-circle-link">
+                <img src="Images/profile.jpg" alt="Profile Photo">
+            </a>
+            <a href="#" class="notification-icon"><i class="fas fa-bell"></i></a>
+            <a href="login.html" class="logout-icon">Q</a>
+        </div>
+    </div>
+
+    <div class="horizontal-cards">
+        <div class="horizontal-card quote-card">
+            <h2>Wrap Up with Excellence! <i class="fas fa-star"></i></h2>
+            <p>Give the day your best finish. Your efforts are outstanding!</p>
+        </div>
+        <div class="horizontal-card work-card">
+            <h2>Let's Get to Work</h2>
+            <p>18 Mar, Tuesday 00:00:00</p>
+            <p>Shift: 10:00 - 19:00 <a href="#">View Policies</a></p>
+        </div>
+    </div>
+
+    <div class="apps-requests-container">
+        <div class="apps-section">
+            <div class="apps-header">
+                <h2>Apps</h2>
+                <a href="#">View All</a>
+            </div>
+            <div class="apps-grid">
+                <a href="#" class="app-icon">
+                    <img src="Images/leave.jpeg" alt="Leave">
+                    <span>Leave</span>
+                </a>
+                <a href="#" class="app-icon">
+                    <img src="Images/Attendence.png" alt="Attendance">
+                    <span>Attendance</span>
+                </a>
+                <a href="Employee-Details.html" class="app-icon">
+                    <img src="Images/Emp-details.png" alt="Employee Details">
+                    <span>Emp Details</span>
+                </a>
+                <a href="work.html" class="app-icon">
+                    <img src="Images/work.png" alt="Task Box">
+                    <span>Task Box</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="requests-section">
+            <div class="requests-header">
+                <h2>Requests</h2>
+                <a href="#">View All</a>
+            </div>
+            <div class="requests-grid">
+                <a href="#" class="request-btn"><i class="fas fa-file-alt"></i><br>Apply Leave</a>
+                <a href="#" class="request-btn"><i class="fas fa-cogs"></i><br>Initiate Flow</a>
+                <a href="#" class="request-btn"><i class="fas fa-file-invoice"></i><br>Request HR Letter</a>
+                <a href="#" class="request-btn"><i class="fas fa-money-bill-alt"></i><br>Add Expense</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

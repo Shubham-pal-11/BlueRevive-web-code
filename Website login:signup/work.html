@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <title>Work</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0f2f7, #b2ebf2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            color: white !important;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .container-fluid {
+            padding: 30px;
+        }
+
+        .dashboard-section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-section h2 {
+            margin-bottom: 25px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="https://www.bluerevive.in/" target="_blank">Blue Revive - EP</a>
+    </nav>
+
+    <div class="container-fluid">
+        <a href="index.html" class="btn btn-primary mb-3">Home</a>
+
+        <div class="dashboard-section">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Work</h2>
+                <button class="btn btn-success">+</button>
+            </div>
+        
+            <div class="mb-4">
+                <h3>Assigned</h3>
+                <div class="card p-3">
+                    <p><strong>Assigned By:</strong> Manager Name</p>
+                    <p><strong>Assigned To:</strong> Employee Name</p>
+                    <p><strong>Deadline:</strong> 2024-12-31</p>
+                    <div class="d-flex justify-content-start">
+                        <button class="btn btn-primary mr-2">View File</button>
+                        <button class="btn btn-success mr-2">Submit</button>
+                        <button class="btn btn-secondary">Remarks</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mb-4">
+                <h3>Pending Works</h3>
+                <div class="card p-3">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <strong>Ticket 1:</strong> Task 1 Description
+                        </div>
+                        <div class="list-group-item">
+                            <strong>Ticket 2:</strong> Task 2 Description
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div>
+                <h3>Completed Works</h3>
+                <div class="card p-3">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <strong>Ticket 1:</strong> Completed Task 1
+                        </div>
+                        <div class="list-group-item">
+                            <strong>Ticket 2:</strong> Completed Task 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
